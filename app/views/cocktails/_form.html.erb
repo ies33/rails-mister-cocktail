@@ -1,8 +1,10 @@
 
-<%= form_for(cocktail) do |f| %>
+<%= simple_form_for(cocktail) do |f| %>
 <div class="form-group">
   <%= f.label :name %>
   <%= f.text_field :name, class: 'form-control'%>
+
+  <!-- TODO add new ingredient -->
 </div>
 
 <%= f.submit class: 'btn btn-primary' %>
