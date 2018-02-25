@@ -8,6 +8,13 @@ end
 # simple form 23-2
 gem 'simple_form'
 gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'simple_form'
+gem 'autoprefixer-rails'
+gem 'jquery-rails'
+gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'

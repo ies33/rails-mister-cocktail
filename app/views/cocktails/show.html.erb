@@ -1,16 +1,19 @@
 <h2>Cocktail recipe</h2>
 
 <h1> <%= @cocktail.name %></h1>
-
+<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+<ul class="list-group">
 <%   @cocktail.doses.each do | d | %>
-  <p><%= d.description %></p>
-  <p><%= d.ingredient.name %></p>
+  <li class="list-group-item">add <%= d.description %> of <%= d.ingredient.name %></li>
+
 <% end %>
 <!-- TODO show doses and ingredients -->
 <!-- link to edit/ add dose-->
 
-<%= link_to "Back to list", root_path %>
 
-<%= link_to "add dose", new_cocktail_dose_path(@cocktail) %>
+<%= link_to "Back to list", root_path, class: "btn btn-info"  %>
 
-s
+
+<%= link_to "add dose", new_cocktail_dose_path(@cocktail), class: "btn btn-info"  %>
+
+
