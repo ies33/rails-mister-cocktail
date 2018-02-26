@@ -130,3 +130,19 @@
 .intro{
   padding-bottom:  15px;
 }
+#menu {
+        margin-left    : 353px;
+        margin-top     : -70px;
+        padding-bottom : 16px;
+}
+
+#home {
+        background     : transparent url(images/iris.png);
+        z-index        : 1;
+        width: 25%;
+}
+
+#home:hover {
+        background     : url(images/logo.png);
+        z-index        : 2;
+}
